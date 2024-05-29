@@ -8,9 +8,9 @@ const Header = () => {
   };
 
   return (
-    <div className="bg-[#D6EBE4]">
+    <div className="bg-[#D6EBE4] border border-b-[#1D263A] border-opacity-[12%]">
       <div className="w-full max-w-[1160px] mx-auto flex justify-between items-center">
-        <div className="flex items-center p-4">
+        <div className="flex items-center py-4">
           <img
             src="/images/Subtract.png"
             alt="logo"
@@ -22,7 +22,7 @@ const Header = () => {
           </span>
         </div>
 
-        <ul className="hidden md:flex text-[#1D263A] gap-9 font-semibold">
+        <ul className="hidden md:flex text-[#1D263A] text-[17px] leading-[30px] gap-10 font-semibold">
           <li className="flex justify-center items-center">
             Products
             <div className="pl-2">
