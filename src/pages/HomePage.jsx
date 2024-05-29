@@ -1,18 +1,23 @@
-import React from 'react'
-import About from '../components/Home/About'
-import CountDown from '../components/Home/CountDown'
-import Products from '../components/Home/Products'
+import React from "react";
+import About from "../components/Home/About";
+import CountDown from "../components/Home/CountDown";
+import Products from "../components/Home/Products";
+import ActivitySection from "../components/Home/ActivitySection";
+import HeroSlider from "../components/Home/HeroSlider";
+import MediaCentreSlider from "../components/Home/MediaCentreSlider";
+import HeroSlider2 from "../components/Home/HeroSlider2";
 
 const HomePage = () => {
   return (
-   <>
-    <div>HomePage</div>
-    <About/>
-    <CountDown/>
-    <Products/>
-    
-   </>
-  )
-}
+    <>
+      <HeroSlider />
+      <About />
+      <CountDown />
+      <Products />
+      <MediaCentreSlider />
+      <ActivitySection />
+    </>
+  );
+};
 
-export default HomePage
+export default HomePage;
