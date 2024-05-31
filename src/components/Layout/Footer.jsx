@@ -9,9 +9,9 @@ const Footer = () => {
     formState: { errors },
   } = useForm(createContactSchema);
   return (
-    <div className="w-full max-w-[1160px] mx-auto mt-[97px] border border-yellow-500">
-      <div className="flex justify-between border border-green-500">
-        <div className="basis-[55%] bg-[#116D48] border rounded-3xl text-[#FFFFFF]">
+    <div className="w-full max-w-[1160px] mx-auto mt-[260px]">
+      <div className="bg-[#116D48] border rounded-3xl flex justify-between p-[20px]">
+        <div className="basis-[55%] shrink-0 text-[#FFFFFF]">
           <div className="flex flex-col justify-between items-start pl-[78px]">
             <div>
               <h2 className="font-bold text-[42px] leading-[50.4px] mt-[115px]">
@@ -49,62 +49,66 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="basis-[45%] shrink-0 border border-[#116D48] rounded-[20px]">
-          <div className="mx-[40px] mt-[39px]">
-            <div className="mb-[42px]">
-              <h2 className="text-[#000000] font-semibold text-[32px] leading-[50.4px]">
-                Any Queries?
-              </h2>
+        <div className="basis-[45%] shrink-0">
+          <div className="rounded-xl mt-[-250px]">
+            <div className="bg-white p-8 rounded-lg mt-[39px] border border-[#116D48]">
+              <div className="mb-[42px]">
+                <h2 className="text-[#000000] font-semibold text-[32px] leading-[50.4px]">
+                  Any Queries?
+                </h2>
+              </div>
+
+              <div className="border border-red-500">
+                <form action="" className="">
+                  <div className="mb-[25px]">
+                    <input
+                      type="text"
+                      {...register("name")}
+                      placeholder="Name"
+                      className="text-[#0A142F] w-full font-medium text-[16px] leading-[20px] p-3 border border-[#116D48] rounded-xl"
+                    />
+                  </div>
+
+                  <div className="mb-[25px]">
+                    <input
+                      type="email"
+                      {...register("email")}
+                      placeholder="Email"
+                      className="text-[#0A142F] w-full font-medium text-[16px] leading-[20px] p-3 border border-[#116D48] rounded-xl"
+                    />
+                  </div>
+                  <div className="mb-[25px]">
+                    <input
+                      type="text"
+                      {...register("phone")}
+                      placeholder="Phone Number"
+                      className="text-[#0A142F] w-full font-medium text-[16px] leading-[20px] p-3 border border-[#116D48] rounded-xl"
+                    />
+                  </div>
+                  <div className="mb-[25px]">
+                    <input
+                      type="text"
+                      {...register("subject")}
+                      placeholder="Subject"
+                      className="text-[#0A142F] w-full font-medium text-[16px] leading-[20px] p-3 border border-[#116D48] rounded-xl"
+                    />
+                  </div>
+                  <div className="mb-[25px]">
+                    <input
+                      type="text"
+                      {...register("message")}
+                      placeholder="Message"
+                      className="text-[#0A142F] w-full font-medium text-[16px] leading-[20px] px-3 pt-3 pb-20 border border-[#116D48] rounded-xl"
+                    />
+                  </div>
+                  <div className="mb-[38px]">
+                    <button className="bg-[#146A47] text-[#FFFFFF] text-[16px] leading-[20px] border rounded-xl px-12 py-4">
+                      Send
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
-
-            <form action="">
-              <div className="mb-[25px]">
-                <input
-                  type="text"
-                  {...register("name")}
-                  placeholder="Name"
-                  className="text-[#0A142F] w-full font-medium text-[16px] leading-[20px] p-3 border border-[#116D48] rounded-xl"
-                />
-              </div>
-
-              <div className="mb-[25px]">
-                <input
-                  type="email"
-                  {...register("email")}
-                  placeholder="Email"
-                  className="text-[#0A142F] w-full font-medium text-[16px] leading-[20px] p-3 border border-[#116D48] rounded-xl"
-                />
-              </div>
-              <div className="mb-[25px]">
-                <input
-                  type="text"
-                  {...register("phone")}
-                  placeholder="Phone Number"
-                  className="text-[#0A142F] w-full font-medium text-[16px] leading-[20px] p-3 border border-[#116D48] rounded-xl"
-                />
-              </div>
-              <div className="mb-[25px]">
-                <input
-                  type="text"
-                  {...register("subject")}
-                  placeholder="Subject"
-                  className="text-[#0A142F] w-full font-medium text-[16px] leading-[20px] p-3 border border-[#116D48] rounded-xl"
-                />
-              </div>
-              <div className="mb-[25px]">
-                <input
-                  type="text"
-                  {...register("message")}
-                  placeholder="Message"
-                  className="text-[#0A142F] w-full font-medium text-[16px] leading-[20px] px-3 pt-3 pb-20 border border-[#116D48] rounded-xl"
-                />
-              </div>
-              <div className="mb-[38px]">
-                <button className="bg-[#146A47] text-[#FFFFFF] text-[16px] leading-[20px] border rounded-xl px-12 py-4">
-                  Send
-                </button>
-              </div>
-            </form>
           </div>
         </div>
       </div>
