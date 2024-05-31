@@ -9,12 +9,12 @@ const Footer = () => {
     formState: { errors },
   } = useForm(createContactSchema);
   return (
-    <div className="w-full max-w-[1160px] mx-auto mt-[260px]">
+    <div className="w-full max-w-[1160px] mx-auto mt-[220px]">
       <div className="bg-[#116D48] border rounded-3xl flex justify-between p-[20px]">
-        <div className="basis-[55%] shrink-0 text-[#FFFFFF]">
-          <div className="flex flex-col justify-between items-start pl-[78px]">
+        <div className="basis-[50%] shrink-0 text-[#FFFFFF]">
+          <div className="flex flex-col justify-between items-start pl-[50px]">
             <div>
-              <h2 className="font-bold text-[42px] leading-[50.4px] mt-[115px]">
+              <h2 className="font-bold text-[42px] leading-[50.4px] pt-[40px] pb-[20px]">
                 Our Contacts
               </h2>
             </div>
@@ -35,7 +35,7 @@ const Footer = () => {
                   +09639-203232
                 </p>
               </div>
-              <div>
+              <div className="pb-20">
                 <h6 className="text-[15px] leading-[26px] font-semibold mb-[12px] opacity-[50%] tracking-[3px]">
                   EMAIL
                 </h6>
@@ -49,16 +49,16 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="basis-[45%] shrink-0">
-          <div className="rounded-xl mt-[-250px]">
-            <div className="bg-white p-8 rounded-lg mt-[39px] border border-[#116D48]">
+        <div className="basis-[50%] shrink-0">
+          <div className="rounded-xl mt-[-200px]">
+            <div className="bg-[#FFFFFF] p-8 rounded-[20px] mt-[39px] border border-[#116D48]">
               <div className="mb-[42px]">
                 <h2 className="text-[#000000] font-semibold text-[32px] leading-[50.4px]">
                   Any Queries?
                 </h2>
               </div>
 
-              <div className="border border-red-500">
+              <div className="">
                 <form action="" className="">
                   <div className="mb-[25px]">
                     <input
@@ -101,7 +101,7 @@ const Footer = () => {
                       className="text-[#0A142F] w-full font-medium text-[16px] leading-[20px] px-3 pt-3 pb-20 border border-[#116D48] rounded-xl"
                     />
                   </div>
-                  <div className="mb-[38px]">
+                  <div className="mb-[15px]">
                     <button className="bg-[#146A47] text-[#FFFFFF] text-[16px] leading-[20px] border rounded-xl px-12 py-4">
                       Send
                     </button>
@@ -113,17 +113,14 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="pt-[60px] flex justify-between px-[80px] border-b border-[#979797]-[20%] pb-10">
-        <div className="border border-red-600 flex justify-between flex-col">
+      <div className="pt-[60px] flex justify-between px-[80px] border-b border-[#979797] border-opacity-[20%] pb-10">
+        <div className="flex justify-between flex-col">
           <div>
             <img src="/images/Union.svg" alt="logo" />
           </div>
-          <div className="flex justify-between items-center w-[190px] h-[50px] mt-[19px]">
+          <div className="flex items-center w-[190px] h-[50px] mt-[19px]">
             <div>
               <img src="images/Group76.svg" alt="fb" />
-            </div>
-            <div>
-              <img src="images/Group11.svg" alt="instagram" />
             </div>
             <div>
               <img src="images/Group12.svg" alt="youtube" />
