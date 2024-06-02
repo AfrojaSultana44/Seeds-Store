@@ -51,7 +51,7 @@ const ActivitySection = () => {
           </h4>
         </div>
         <div className="basis-[60%] pl-[10px]">
-          <p className="text-[#1D263A] text-base font-normal opacity-[70%]">
+          <p className="text-[#1D263A] text-base font-normal text-opacity-[70%]">
             We've gathered inspiring farmer testimonials, announced our
             participation in upcoming agricultural fairs and workshops, and held
             team-building events for our employees. Stay tuned to see how we

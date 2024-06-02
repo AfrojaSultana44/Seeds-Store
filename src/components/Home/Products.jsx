@@ -10,7 +10,7 @@ const Products = () => {
           </h4>
         </div>
         <div className="basis-[55%] pl-[10px]">
-          <p className="text-[#1D263A] text-left text-[17px] leading-[30px] font-normal opacity-[80%]">
+          <p className="text-[#1D263A] text-left text-[17px] leading-[30px] font-normal text-opacity-[80%]">
             Choose our high-quality seeds for exceptional yield, strong disease
             resistance, and adaptability to various growing conditions. Rely on
             us for dependable growth and a prosperous farming future.

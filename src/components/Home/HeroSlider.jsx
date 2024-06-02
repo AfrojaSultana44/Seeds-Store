@@ -58,7 +58,7 @@ const HeroSlider = () => {
                   <span className="text-[#116D48]">Seeds</span> of Innovation
                   and Growth
                 </h1>
-                <p className="text-[#1D263A] text-xl font-normal mb-[59px] mt-[15px] opacity-[70%]">
+                <p className="text-[#1D263A] text-xl font-normal mb-[59px] mt-[15px] text-opacity-[70%]">
                   Unleash Potential with Our Exclusive Hybrid Selection
                 </p>
                 <div>
@@ -87,11 +87,7 @@ const HeroSlider = () => {
           <SwiperSlide className="w-full h-full">
             <div className="w-full flex justify-between pt-20">
               <div className="basis-[55%] shrink-0">
-                <img
-                  className="pl-[60px]"
-                  src="/images/Group1144.svg"
-                  alt=""
-                />
+                <img className="pl-[60px]" src="/images/Group1144.svg" alt="" />
               </div>
               <div className="basis-[45%] text-right">
                 <h1 className="text-[#1D263A] text-[64px] leading-[72px] font-bold">
@@ -100,7 +96,7 @@ const HeroSlider = () => {
                   </span>{" "}
                   Agriculture
                 </h1>
-                <p className="text-[#1D263A] text-xl font-normal mb-[59px] mt-[15px] opacity-[70%]">
+                <p className="text-[#1D263A] text-xl font-normal mb-[59px] mt-[15px] text-opacity-[70%]">
                   Expert support and guidance for informed decisions and
                   maximized crop yields.
                 </p>
@@ -120,7 +116,7 @@ const HeroSlider = () => {
                   <span className="text-[#116D48]">Unwavering</span> Quality,{" "}
                   <span className="text-[#116D48]">Unmatched</span> Yields
                 </h1>
-                <p className="text-[#1D263A] text-xl font-normal mb-[59px] mt-[15px] opacity-[70%]">
+                <p className="text-[#1D263A] text-xl font-normal mb-[59px] mt-[15px] text-opacity-[70%]">
                   State-of-the-art processing ensures exceptional seed purity
                   and germination rates.
                 </p>
