@@ -11,7 +11,7 @@ const About = () => {
           <h1 className="text-[#1D263A] text-5xl font-bold leading-[57.6px] mb-[17px]">
             About Us
           </h1>
-          <p className="text-[#1D263A] text-base font-normal leading-[26px] opacity-[80%]">
+          <p className="text-[#1D263A] text-base font-normal leading-[26px] text-opacity-[80%]">
             Rasel Seed Company(pvt) Ltd. is one of the premier seed companies in
             Bangladesh. It is one of the largest seed company in Bangladesh,
             with a strong Employee base for developing Market quality hybrids in
@@ -35,7 +35,7 @@ const About = () => {
                 <h3 className="text-[#1D263A] text-2xl font-medium mb-[18px]">
                   100% Hybride
                 </h3>
-                <ul className="text-[#1D263A] text-[16px] leading-[26px] list-disc font-normal pl-5 opacity-[80%]">
+                <ul className="text-[#1D263A] text-[16px] leading-[26px] list-disc font-normal pl-5 text-opacity-[80%]">
                   <li>
                     <p>
                       Rasel Seed Company(pvt) Ltd. is one of the premier seed
@@ -73,7 +73,7 @@ const About = () => {
                 </h3>
                 <ul className="list-disc pl-5">
                   <li>
-                    <p className="text-[#1D263A] text-[16px] leading-[26px] font-normal opacity-[80%]">
+                    <p className="text-[#1D263A] text-[16px] leading-[26px] font-normal text-opacity-[80%]">
                       Rasel’s emphasis is also on strong financial and operating
                       metrics and creating value for all its stakeholders. It
                       has consistently delivered profits and superior return and
