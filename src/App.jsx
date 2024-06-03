@@ -7,6 +7,7 @@ import ContactPage from "./pages/contact/ContactPage";
 import AboutPage from "./pages/about/AboutPage";
 import ProductPage from "./pages/product/ProductPage";
 import ActivityPage from "./pages/activity/ActivityPage";
+import ProductDetails from "./pages/product/ProductDetails";
 
 const routes = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const routes = createBrowserRouter([
           {
             index: true,
             element: <ProductPage />,
+          },
+          {
+            path: "product-details",
+            element: <ProductDetails />,
           },
         ],
       },
