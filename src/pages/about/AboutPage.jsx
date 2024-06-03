@@ -8,27 +8,24 @@ const AboutPage = () => {
           Our Story
         </h2>
       </div>
-      <img
-        className="w-full rounded-lg object-cover object-center mb-[50px]"
-        src="/images/banner_image.svg"
-        alt=""
-      />
+      <div>
+        <img
+          className="w-full rounded-lg object-cover object-center mb-[50px]"
+          src="/images/banner_image.svg"
+          alt=""
+        />
+      </div>
       <div className="flex justify-between">
         <div className="basis-[50%] shrink-0">
           <div className="flex justify-between items-start">
-            <div className="relative">
-              {/* <img
-                className="w-[80px] h-[80px]"
-                src="/images/Ellipse_10.svg"
-                alt=""
-              />
+            <div className="w-[100px] h-[100px] shrink-0 flex justify-center items-center rounded-full bg-green-100">
               <img
-                className="w-[27.87px] h-[24.31px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2"
+                className="w-[50px] h-[50px]"
                 src="/images/Vector.svg"
-                alt=""
-              /> */}
+                alt="heart"
+              />
             </div>
-            <div>
+            <div className="basis-auto">
               <p className="text-[#1D263A] text-[17px] leading-[30px] font-normal text-opacity-[70%] pl-4">
                 <span className="text-[#20BFA9]">Our Mission</span> Rasel Seed
                 Company is driven by a singular mission: to empower farmers

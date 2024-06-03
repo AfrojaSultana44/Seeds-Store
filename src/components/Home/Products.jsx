@@ -1,6 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
+import ProductsCard from "../shared/ProductsCard";
 
 const Products = () => {
+  const [productList, setProductList] = useState([
+    {
+      id: "1",
+      name: "সম্রাট",
+      image: "/images/image9.png",
+    },
+    {
+      id: "2",
+      name: "সম্রাট 2",
+      image: "/images/ASol1.png",
+    },
+    {
+      id: "3",
+      name: "সম্রাট 3",
+      image: "/images/ASol1.png",
+    },
+
+    {
+      id: "4",
+      name: "সম্রাট 4",
+      image: "/images/image12.png",
+    },
+    {
+      id: "5",
+      name: "সম্রাট 5",
+      image: "/images/image9.png",
+    },
+    {
+      id: "6",
+      name: "সম্রাট 6",
+      image: "/images/image9.png",
+    },
+    {
+      id: "7",
+      name: "সম্রাট 7",
+      image: "/images/image9.png",
+    },
+    {
+      id: "8",
+      name: "সম্রাট 8",
+      image: "/images/image9.png",
+    },
+  ]);
+
   return (
     <div className="w-full max-w-[1160px] mx-auto mt-[142px]">
       <div className="flex justify-between items-center border border-red-700 ">
@@ -18,92 +63,7 @@ const Products = () => {
         </div>
       </div>
 
-      {/* <div className="flex justify-between items-center pt-8 border border-red-600">
-        
-        <div>
-          <img
-            className="w-[219px] h-[297px]"
-            src="/images/image 9.png"
-            alt=""
-          />
-          <p className="text-center text-[#1D263A] text-xl font-bold mt-[26px]">
-            সম্রাট
-          </p>
-        </div>
-        <div>
-          <img
-            className="w-[199px] h-[260px]"
-            src="/images/samrat 1.png"
-            alt=""
-          />
-          <p className="text-center text-[#1D263A] text-xl font-bold mt-[44px]">
-            বারি - ৩৩
-          </p>
-        </div>
-        <div>
-          <img
-            className="w-[188.21px] h-[260px]"
-            src="/images/ASol 1.png"
-            alt=""
-          />
-          <p className="text-center text-[#1D263A] text-xl font-bold mt-[45px]">
-            আসল - ৩৫২৬
-          </p>
-        </div>
-        <div>
-          <img
-            className="w-[191.08.21px] h-[260px]"
-            src="/images/image 12.png"
-            alt=""
-          />
-          <p className="text-center text-[#1D263A] text-xl font-bold mt-[45px]">
-          আর এস যাদু - ৫৫
-          </p>
-        </div>
-      </div> */}
-
-      <div className="flex justify-between items-center pt-8 border border-red-600">
-        <div>
-          <img
-            className="w-[220px] h-[261px]"
-            src="/images/image9.png"
-            alt=""
-          />
-          <p className="text-center text-[#1D263A] text-xl font-bold mt-[44px]">
-            সম্রাট
-          </p>
-        </div>
-        <div>
-          <img
-            className="w-[199px] h-[260px]"
-            src="/images/samrat1.png"
-            alt=""
-          />
-          <p className="text-center text-[#1D263A] text-xl font-bold mt-[44px]">
-            বারি - ৩৩
-          </p>
-        </div>
-        <div>
-          <img
-            className="w-[188.21px] h-[260px]"
-            src="/images/ASol1.png"
-            alt=""
-          />
-          <p className="text-center text-[#1D263A] text-xl font-bold mt-[45px]">
-            আসল - ৩৫২৬
-          </p>
-        </div>
-        <div>
-          <img
-            className="w-[191.08.21px] h-[260px]"
-            src="/images/image12.png"
-            alt=""
-          />
-          <p className="text-center text-[#1D263A] text-xl font-bold mt-[45px]">
-            আর এস যাদু - ৫৫
-          </p>
-        </div>
-      </div>
+      <ProductsCard productList={productList} />
 
       <div className="mt-[62px] pb-[117px] text-center">
         <button className="text-[#116D48] font-semibold text-lg border border-[#146A47] rounded-xl py-[20px] px-[80px]">

@@ -10,10 +10,10 @@ const Footer = () => {
           </div>
           <div className="flex items-center w-[190px] h-[50px] mt-[19px]">
             <div>
-              <img src="images/Group76.svg" alt="fb" />
+              <img src="/images/Group76.svg" alt="fb" />
             </div>
             <div>
-              <img src="images/Group12.svg" alt="youtube" />
+              <img src="/images/Group12.svg" alt="youtube" />
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@ const Footer = () => {
           <h6 className="text-[18px] leading-[22.5px] font-medium mb-[20px]">
             Download App
           </h6>
-          <img className="w-[180px] h-[49px]" src="images/Group.svg" alt="" />
+          <img className="w-[180px] h-[49px]" src="/images/Group.svg" alt="" />
         </div>
       </div>
       <p className="text-center text-[#0A142F] text-[14px] leading-[17.5px] font-normal my-[30px] opacity-[65%]">
