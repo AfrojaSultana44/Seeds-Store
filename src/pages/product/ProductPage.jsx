@@ -10,39 +10,39 @@ const ProductPage = () => {
     },
     {
       id: "2",
-      name: "সম্রাট 2",
-      image: "/images/ASol1.png",
+      name: "বারি - ৩৩ ",
+      image: "/images/samrat1.png",
     },
     {
       id: "3",
-      name: "সম্রাট 3",
+      name: "আসল - ৩৫২৬ ",
       image: "/images/ASol1.png",
     },
 
     {
       id: "4",
-      name: "সম্রাট 4",
+      name: "আর এস যাদু-৫৫",
       image: "/images/image12.png",
     },
     {
       id: "5",
-      name: "সম্রাট 5",
+      name: "সম্রাট",
       image: "/images/image9.png",
     },
     {
       id: "6",
-      name: "সম্রাট 6",
-      image: "/images/image9.png",
+      name: "বারি - ৩৩ ",
+      image: "/images/samrat1.png",
     },
     {
       id: "7",
-      name: "সম্রাট 7",
-      image: "/images/image9.png",
+      name: "আসল - ৩৫২৬ ",
+      image: "/images/ASol1.png",
     },
     {
       id: "8",
-      name: "সম্রাট 8",
-      image: "/images/image9.png",
+      name: "আর এস যাদু-৫৫",
+      image: "/images/image12.png",
     },
   ]);
 
@@ -82,7 +82,7 @@ const ProductPage = () => {
         </li>
       </ul>
 
-      <div className="w-full mx-auto text-center mb-[49px]">
+      <div className="w-full mx-auto text-center">
         <ul className="flex justify-center items-center">
           <li className=" p-5 text-[22px] leading-[33px] tracking-[0.5px] font-bold text-[#404040] hover:text-[#1F7653] cursor-pointer uppercase">
             Maize

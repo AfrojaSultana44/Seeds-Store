@@ -10,45 +10,45 @@ const Products = () => {
     },
     {
       id: "2",
-      name: "সম্রাট 2",
-      image: "/images/ASol1.png",
+      name: "বারি - ৩৩ ",
+      image: "/images/samrat1.png",
     },
     {
       id: "3",
-      name: "সম্রাট 3",
+      name: "আসল - ৩৫২৬ ",
       image: "/images/ASol1.png",
     },
 
     {
       id: "4",
-      name: "সম্রাট 4",
+      name: "আর এস যাদু-৫৫",
       image: "/images/image12.png",
     },
     {
       id: "5",
-      name: "সম্রাট 5",
+      name: "সম্রাট",
       image: "/images/image9.png",
     },
     {
       id: "6",
-      name: "সম্রাট 6",
-      image: "/images/image9.png",
+      name: "বারি - ৩৩ ",
+      image: "/images/samrat1.png",
     },
     {
       id: "7",
-      name: "সম্রাট 7",
-      image: "/images/image9.png",
+      name: "আসল - ৩৫২৬ ",
+      image: "/images/ASol1.png",
     },
     {
       id: "8",
-      name: "সম্রাট 8",
-      image: "/images/image9.png",
+      name: "আর এস যাদু-৫৫",
+      image: "/images/image12.png",
     },
   ]);
 
   return (
     <div className="w-full max-w-[1160px] mx-auto mt-[142px]">
-      <div className="flex justify-between items-center border border-red-700 ">
+      <div className="flex justify-between items-center pb-4">
         <div className="basis-[45%]">
           <h4 className="text-[#1D263A] text-6xl font-semibold">
             Our Field Crops
