@@ -1,6 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 
 const AboutPage = () => {
+  const [chairmanProfile, setChairmanProfile] = useState([
+    {
+      id: "1",
+      image: "/images/Img_1.svg",
+      name: "Md. Shajahan Ali",
+      title: "Chairman",
+    },
+  ]);
+
+  const [ceoProfile, setCeoProfile] = useState([
+    {
+      id: "1",
+      image: "/images/Img_2.svg",
+      name: "MD. Atiqur Rahman",
+      title: "CEO",
+    },
+  ]);
+
   return (
     <div className="w-full max-w-[1160px] mx-auto">
       <div className="py-20">
@@ -16,17 +34,17 @@ const AboutPage = () => {
         />
       </div>
       <div className="flex justify-between">
-        <div className="basis-[50%] shrink-0">
+        <div className="basis-[50%] shrink-0 border border-blue-500">
           <div className="flex justify-between items-start">
-            <div className="w-[100px] h-[100px] shrink-0 flex justify-center items-center rounded-full bg-green-100">
+            <div className="w-[80px] h-[80px] shrink-0 flex justify-center items-center rounded-full bg-[#D6EBE4] bg-opacity-[40%]">
               <img
-                className="w-[50px] h-[50px]"
+                className="w-[32px] h-[32px]"
                 src="/images/Vector.svg"
                 alt="heart"
               />
             </div>
             <div className="basis-auto">
-              <p className="text-[#1D263A] text-[17px] leading-[30px] font-normal text-opacity-[70%] pl-4">
+              <p className="text-[#1D263A] text-[17px] leading-[30px] font-normal text-opacity-[70%] pl-9 pr-4">
                 <span className="text-[#20BFA9]">Our Mission</span> Rasel Seed
                 Company is driven by a singular mission: to empower farmers
                 globally. We recognize the vital role they play in ensuring food
@@ -40,13 +58,17 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        <div className="basis-[50%] shrink-0">
+        <div className="basis-[50%] shrink-0 border border-blue-500">
           <div className="flex justify-between">
-            <div>
-              <img src="/images/icon.svg" alt="" />
+            <div className="w-[80px] h-[80px] shrink-0 flex justify-center items-center rounded-full bg-[#FAE2DA] bg-opacity-[40%]">
+              <img
+                className="w-[36px] h-[36px]"
+                src="/images/zap_1.svg"
+                alt=""
+              />
             </div>
             <div>
-              <p className="text-[#1D263A] text-[17px] leading-[30px] font-normal text-opacity-[70%] pl-4">
+              <p className="text-[#1D263A] text-[17px] leading-[30px] font-normal text-opacity-[70%] pl-9">
                 <span className="text-[#FF794D]">Our Vision</span> At Rasel Seed
                 Company, we envision a future where agriculture flourishes in
                 harmony with the environment. We aspire to be the world's
@@ -63,7 +85,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <div className="bg-[#66B69A] rounded-[16px] bg-opacity-[10%] mt-[50px]">
+      <div className="bg-[#66B69A] rounded-[16px] bg-opacity-[10%] mt-[80px]">
         <p className="text-[#1D263A] text-[24px] leading-[39px] text-justify font-normal text-opacity-[80%] p-[103px] mb-[60px]">
           Rasel Seed Company empowers farmers globally with high-quality seeds
           and innovative solutions. Our diverse seed portfolio, bred for yield,
@@ -77,22 +99,35 @@ const AboutPage = () => {
       </div>
 
       <div className="flex justify-between">
-        <div className="basis-[40%] relative">
-          <img className="w-[460px] h-[574px]" src="/images/Img_1.svg" alt="" />
-          <div className="bg-white absolute bottom-0 right-0 z-[99999] shadow-xl rounded-[20px] px-6 py-4">
-            <h4 className="text-[#000000] text-[32px] leading-[40px] tracking-[-1px] font-semibold opacity-[80%] mb-[9px]">
-              Md. Shajahan Ali
-            </h4>
-            <p className="text-[#000000] text-[21px] leading-[32px] font-normal opacity-[64%] text-opacity-[80%]">
-              Chairman
-            </p>
-          </div>
-        </div>
-        <div className="basis-[60%] pt-[150px] pl-[100px] text-left">
-          <div className="w-[474px] h-[456px]">
-            <h3 className="text-[#1D263A] text-[48px] leading-[57.6px] tracking-[-1px] font-semibold pb-8">
-              Word From the Chairman
-            </h3>
+        {chairmanProfile.map((item, index) => {
+          return (
+            <div key={index} className="basis-[30%] relative">
+              <img
+                className="w-80 rounded-lg object-cover object-center mb-[50px]"
+                src={item.image}
+                alt={item.name}
+              />
+              <div className="bg-white absolute bottom-0 right-0 z-[99999] shadow-xl rounded-[20px] px-6 py-4">
+                <h4 className="text-[#000000] text-[32px] leading-[40px] tracking-[-1px] font-semibold opacity-[80%] mb-[9px]">
+                  {item.name}
+                </h4>
+                <p className="text-[#000000] text-[21px] leading-[32px] font-normal opacity-[64%] text-opacity-[80%]">
+                  {item.title}
+                </p>
+              </div>
+            </div>
+          );
+        })}
+        <div className="basis-[70%] pt-[100px] pl-[100px]">
+          <div>
+            <div>
+              <p className="text-[#1D263A] text-[48px] leading-[57.6px] tracking-[-1px] font-semibold">
+                Word From
+              </p>
+              <p className="text-[#1D263A] text-[48px] leading-[57.6px] tracking-[-1px] font-semibold pb-8">
+                the Chairman
+              </p>
+            </div>
             <p className="text-[#1D263A] text-[20px] leading-[31px] font-normal text-opacity-[80%]">
               For generations, Rasel Seeds has been a steward of agricultural
               progress. Our unwavering commitment to quality seeds and
@@ -104,12 +139,15 @@ const AboutPage = () => {
       </div>
 
       <div className="flex justify-between py-[50px]">
-        <div className="basis-[60%] pt-[150px] pl-[70px]">
-          <div className="w-[474px] h-[456px]">
-            <div className="w-[337px] h-[116px]">
-              <h3 className="text-[#1D263A] text-[48px] leading-[57.6px] tracking-[-1px] font-semibold">
-                Word From the CEO
-              </h3>
+        <div className="basis-[65%] pt-[70px] pl-[70px] pr-8  border border-green-500">
+          <div>
+            <div>
+              <p className="text-[#1D263A] text-[48px] leading-[57.6px] tracking-[-1px] font-semibold">
+                Word From
+              </p>
+              <p className="text-[#1D263A] text-[48px] leading-[57.6px] tracking-[-1px] font-semibold">
+                the CEO
+              </p>
             </div>
             <p className="text-[#1D263A] text-[20px] leading-[31px] font-normal text-opacity-[80%] pt-8">
               At Rasel Seeds, innovation is in our DNA. We push the boundaries
@@ -119,17 +157,26 @@ const AboutPage = () => {
             </p>
           </div>
         </div>
-        <div className="basis-[40%] relative">
-          <img className="w-[460px] h-[574px]" src="/images/Img_2.svg" alt="" />
-          <div className="bg-white absolute bottom-0 right-0 z-[99999] shadow-xl rounded-[20px] px-6 py-4">
-            <h4 className="text-[#000000] text-[32px] leading-[40px] tracking-[-1px] font-semibold opacity-[80%] mb-[9px]">
-              MD. Atiqur Rahman
-            </h4>
-            <p className="text-[#000000] text-[21px] leading-[32px] font-normal opacity-[64%] text-opacity-[80%]">
-              CEO
-            </p>
-          </div>
-        </div>
+
+        {ceoProfile.map((item, index) => {
+          return (
+            <div key={index} className="basis-[35%] relative border border-red-500">
+              <img
+                className="w-80 rounded-lg object-cover object-center mb-[50px]"
+                src={item.image}
+                alt={item.name}
+              />
+              <div className="bg-white absolute bottom-0 right-0 z-[99999] shadow-xl rounded-[20px] px-6 py-4">
+                <h4 className="text-[#000000] text-[32px] leading-[40px] tracking-[-1px] font-semibold opacity-[80%] mb-[9px]">
+                  {item.name}
+                </h4>
+                <p className="text-[#000000] text-[21px] leading-[32px] font-normal opacity-[64%] text-opacity-[80%]">
+                  {item.title}
+                </p>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

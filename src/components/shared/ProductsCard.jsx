@@ -1,15 +1,15 @@
 import React from "react";
 
-const ProductsCard = ({productList}) => {
+const ProductsCard = ({ productList }) => {
   return (
-    <div className="grid grid-cols-4 gap-4 pt-8 border border-green-500 py-5">
+    <div className="grid grid-cols-4 gap-4 pt-12">
       {productList.map((item, index) => {
         return (
           <div
             key={index}
-            className="relative border border-red-500
+            className="relative 
            before:w-full before:h-[70%] before:absolute before:left-0 before:bottom-0
-            before:bg-green-200 before:rounded-t-[100px] before:z-[-10] z-[10]"
+            before:bg-[#E7F1ED] before:rounded-t-[300px] before:rounded-b-[20px] before:z-[-10] z-[10]"
           >
             <img
               className="w-[80%] h-[261px] mx-auto"
