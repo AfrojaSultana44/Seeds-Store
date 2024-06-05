@@ -9,7 +9,7 @@ const ProductsCard = ({ productList }) => {
             key={index}
             className="relative 
            before:w-full before:h-[70%] before:absolute before:left-0 before:bottom-0
-            before:bg-[#E7F1ED] before:rounded-t-[300px] before:rounded-b-[20px] before:z-[-10] z-[10]"
+            before:bg-[#E7F1ED] before:rounded-t-[150px] before:rounded-b-[20px] before:z-[-10] z-[10]"
           >
             <img
               className="w-[80%] h-[261px] mx-auto"

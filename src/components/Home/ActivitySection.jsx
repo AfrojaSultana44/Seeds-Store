@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { Link } from "react-router-dom";
 
 const ActivitySection = () => {
   const [sliderImages, setSliderImages] = useState([
@@ -121,9 +122,11 @@ const ActivitySection = () => {
       </Swiper>
 
       <div className="mt-[62px] text-center">
-        <button className="text-[#116D48] text-lg font-semibold border border-[#146A47] rounded-xl py-[20px] px-[80px]">
-          VIEW ALL
-        </button>
+        <Link to={"/activity"}>
+          <button className="text-[#116D48] text-lg font-semibold border border-[#146A47] rounded-xl py-[20px] px-[80px]">
+            VIEW ALL
+          </button>
+        </Link>
       </div>
     </div>
   );

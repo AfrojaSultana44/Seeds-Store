@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import YouTube from "react-youtube";
 import VideoModal from "../shared/VideoModal";
+import { Link } from "react-router-dom";
 
 const MediaCentreSlider = () => {
   const [videoId, setVideoId] = useState("");
@@ -127,7 +128,11 @@ const MediaCentreSlider = () => {
             <SwiperSlide key={index} className="w-full h-full">
               <div className="bg-[#FFFFFF] rounded-[20px] overflow-hidden">
                 <div className="rounded-[20px] w-full h-[220px] relative">
-                  <img src={item.srcImage} alt="" className="w-full h-full object-fill" />
+                  <img
+                    src={item.srcImage}
+                    alt=""
+                    className="w-full h-full object-fill"
+                  />
                   <img
                     onClick={() => handleOpen(item.src)}
                     className="w-[80px] h-[80px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 hover:scale-125 cursor-pointer transition-all duration-500 ease-in-out"
@@ -149,9 +154,11 @@ const MediaCentreSlider = () => {
         </Swiper>
 
         <div className="mt-[62px] pb-[117px] text-center">
-          <button className="text-[#116D48] font-semibold text-lg border border-[#146A47] rounded-xl py-[20px] px-[80px]">
-            VIEW ALL
-          </button>
+          <Link to={"/media-centre"}>
+            <button className="text-[#116D48] font-semibold text-lg border border-[#146A47] rounded-xl py-[20px] px-[80px]">
+              VIEW ALL
+            </button>
+          </Link>
         </div>
         <VideoModal
           openVideoModal={openVideoModal}

@@ -1,23 +1,19 @@
 import React, { useState } from "react";
 
 const AboutPage = () => {
-  const [chairmanProfile, setChairmanProfile] = useState([
-    {
-      id: "1",
-      image: "/images/Img_1.svg",
-      name: "Md. Shajahan Ali",
-      title: "Chairman",
-    },
-  ]);
+  const [chairmanProfile, setChairmanProfile] = useState({
+    id: "1",
+    image: "/images/Img_1.svg",
+    name: "Md. Shajahan Ali",
+    title: "Chairman",
+  });
 
-  const [ceoProfile, setCeoProfile] = useState([
-    {
-      id: "1",
-      image: "/images/Img_2.svg",
-      name: "MD. Atiqur Rahman",
-      title: "CEO",
-    },
-  ]);
+  const [ceoProfile, setCeoProfile] = useState({
+    id: "1",
+    image: "/images/Img_2.svg",
+    name: "MD. Atiqur Rahman",
+    title: "CEO",
+  });
 
   return (
     <div className="w-full max-w-[1160px] mx-auto">
@@ -99,25 +95,22 @@ const AboutPage = () => {
       </div>
 
       <div className="flex justify-between">
-        {chairmanProfile.map((item, index) => {
-          return (
-            <div key={index} className="basis-[30%] relative">
-              <img
-                className="w-80 rounded-lg object-cover object-center mb-[50px]"
-                src={item.image}
-                alt={item.name}
-              />
-              <div className="bg-white absolute bottom-0 right-0 z-[99999] shadow-xl rounded-[20px] px-6 py-4">
-                <h4 className="text-[#000000] text-[32px] leading-[40px] tracking-[-1px] font-semibold opacity-[80%] mb-[9px]">
-                  {item.name}
-                </h4>
-                <p className="text-[#000000] text-[21px] leading-[32px] font-normal opacity-[64%] text-opacity-[80%]">
-                  {item.title}
-                </p>
-              </div>
-            </div>
-          );
-        })}
+        <div className="basis-[30%] relative">
+          <img
+            className="w-80 rounded-lg object-cover object-center mb-[50px]"
+            src={chairmanProfile.image}
+            alt={chairmanProfile.name}
+          />
+          <div className="bg-white absolute bottom-0 right-0 z-[99999] shadow-xl rounded-[20px] px-6 py-4">
+            <h4 className="text-[#000000] text-[32px] leading-[40px] tracking-[-1px] font-semibold opacity-[80%] mb-[9px]">
+              {chairmanProfile.name}
+            </h4>
+            <p className="text-[#000000] text-[21px] leading-[32px] font-normal opacity-[64%] text-opacity-[80%]">
+              {chairmanProfile.title}
+            </p>
+          </div>
+        </div>
+
         <div className="basis-[70%] pt-[100px] pl-[100px]">
           <div>
             <div>
@@ -158,25 +151,21 @@ const AboutPage = () => {
           </div>
         </div>
 
-        {ceoProfile.map((item, index) => {
-          return (
-            <div key={index} className="basis-[35%] relative border border-red-500">
-              <img
-                className="w-80 rounded-lg object-cover object-center mb-[50px]"
-                src={item.image}
-                alt={item.name}
-              />
-              <div className="bg-white absolute bottom-0 right-0 z-[99999] shadow-xl rounded-[20px] px-6 py-4">
-                <h4 className="text-[#000000] text-[32px] leading-[40px] tracking-[-1px] font-semibold opacity-[80%] mb-[9px]">
-                  {item.name}
-                </h4>
-                <p className="text-[#000000] text-[21px] leading-[32px] font-normal opacity-[64%] text-opacity-[80%]">
-                  {item.title}
-                </p>
-              </div>
-            </div>
-          );
-        })}
+        <div className="basis-[35%] relative border border-red-500">
+          <img
+            className="w-80 rounded-lg object-cover object-center mb-[50px]"
+            src={ceoProfile.image}
+            alt={ceoProfile.name}
+          />
+          <div className="bg-white absolute bottom-0 right-0 z-[99999] shadow-xl rounded-[20px] px-6 py-4">
+            <h4 className="text-[#000000] text-[32px] leading-[40px] tracking-[-1px] font-semibold opacity-[80%] mb-[9px]">
+              {ceoProfile.name}
+            </h4>
+            <p className="text-[#000000] text-[21px] leading-[32px] font-normal opacity-[64%] text-opacity-[80%]">
+              {ceoProfile.title}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
