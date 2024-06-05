@@ -30,44 +30,65 @@ const ProductDetails = () => {
           </div>
         </div>
         <div className="basis-[50%]  shrink-0">
-          <div className="w-full max-w-[580px] mr-auto pl-[80px] py-[100px]">
-          <div className="">
-            <h1 className="text-[#116D48] text-[64px] leading-[72px] tracking-[-1px] font-bold pb-[18px]">
-              {productDetails.name}
-            </h1>
-            <p className="text-[#262729] text-opacity-[70%] text-[17px] leading-[30px] pb-[18px]">
-              {productDetails.title}
-            </p>
-          </div>
-          <ul>
-            <li className="text-[#1D263A] text-[17px] leading-[30px] font-semibold pb-4 flex justify-between border border-red-600">
-              <p className="border border-green-500">Maturity time:</p>
-              <p className=" text-[#1D263A] text-opacity-[80%] text-[17px] leading-[30px] font-normal border border-blue-500">
-                {productDetails.maturitytTime}
+          <div className="w-full max-w-[580px] mr-auto pl-[100px] py-[100px]">
+            <div className="">
+              <h1 className="text-[#116D48] text-[64px] leading-[72px] tracking-[-1px] font-bold pb-[18px]">
+                {productDetails.name}
+              </h1>
+              <p className="text-[#262729] text-opacity-[70%] text-[17px] leading-[30px] pb-[18px]">
+                {productDetails.title}
               </p>
-            </li>
-            <li className="text-[#1D263A] text-[17px] leading-[30px] font-semibold pb-4">
-              Plant height:
-            </li>
-            <li className="text-[#1D263A] text-[17px] leading-[30px] font-semibold pb-4">
-              Stalk:
-            </li>
-            <li className="text-[#1D263A] text-[17px] leading-[30px] font-semibold pb-4">
-              Grain color:
-            </li>
-            <li className="text-[#1D263A] text-[17px] leading-[30px] font-semibold pb-4">
-              Grain size:
-            </li>
-            <li className="text-[#1D263A] text-[17px] leading-[30px] font-semibold pb-4">
-              Plant:
-            </li>
-            <li className="text-[#1D263A] text-[17px] leading-[30px] font-semibold pb-4">
-              Cobs:
-            </li>
-            <li className="text-[#1D263A] text-[17px] leading-[30px] font-semibold pb-4">
-              Blight disease:
-            </li>
-          </ul>
+            </div>
+            <ul>
+              <li className="text-[#1D263A] text-[17px] leading-[30px] font-semibold pb-4 flex justify-between">
+                <p>Maturity time:</p>
+                <p className=" text-[#1D263A] text-opacity-[80%] text-[17px] leading-[30px] font-normal">
+                  {productDetails.maturitytTime}
+                </p>
+              </li>
+              <li className="text-[#1D263A] text-[17px] leading-[30px] font-semibold pb-4 flex justify-between">
+                <p>Plant height:</p>
+                <p className=" text-[#1D263A] text-opacity-[80%] text-[17px] leading-[30px] font-normal">
+                  {productDetails.plantHeight}
+                </p>
+              </li>
+              <li className="text-[#1D263A] text-[17px] leading-[30px] font-semibold pb-4 flex justify-between">
+                <p>Stalk:</p>
+                <p className=" text-[#1D263A] text-opacity-[80%] text-[17px] leading-[30px] font-normal">
+                  {productDetails.stalk}
+                </p>
+              </li>
+              <li className="text-[#1D263A] text-[17px] leading-[30px] font-semibold pb-4 flex justify-between">
+                <p>Grain color:</p>
+                <p className=" text-[#1D263A] text-opacity-[80%] text-[17px] leading-[30px] font-normal">
+                  {productDetails.grainColor}
+                </p>
+              </li>
+              <li className="text-[#1D263A] text-[17px] leading-[30px] font-semibold pb-4 flex justify-between">
+                <p>Grain size:</p>
+                <p className=" text-[#1D263A] text-opacity-[80%] text-[17px] leading-[30px] font-normal">
+                  {productDetails.grainSize}
+                </p>
+              </li>
+              <li className="text-[#1D263A] text-[17px] leading-[30px] font-semibold pb-4 flex justify-between">
+                <p>Plant:</p>
+                <p className=" text-[#1D263A] text-opacity-[80%] text-[17px] leading-[30px] font-normal">
+                  {productDetails.plant}
+                </p>
+              </li>
+              <li className="text-[#1D263A] text-[17px] leading-[30px] font-semibold pb-4 flex justify-between">
+                <p>Cobs:</p>
+                <p className=" text-[#1D263A] text-opacity-[80%] text-[17px] leading-[30px] font-normal">
+                  {productDetails.cobs}
+                </p>
+              </li>
+              <li className="text-[#1D263A] text-[17px] leading-[30px] font-semibold flex justify-between">
+                <p>Blight disease:</p>
+                <p className=" text-[#1D263A] text-opacity-[80%] text-[17px] leading-[30px] font-normal">
+                  {productDetails.blightDisease}
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

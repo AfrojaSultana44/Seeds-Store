@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -10,17 +11,19 @@ const Header = () => {
   return (
     <div className="bg-[#D6EBE4] border border-b-[#1D263A] border-opacity-[12%]">
       <div className="w-full max-w-[1160px] mx-auto flex justify-between items-center">
-        <div className="flex items-center py-4">
-          <img
-            src="/images/Subtract.png"
-            alt="logo"
-            className="w-[56px] h-[58px] rounded"
-          />
-          <span className="w-full text-xl font-semibold text-[#116D48] ms-4">
-            <p>RASEL</p>
-            <p>SEEDS</p>
-          </span>
-        </div>
+        <Link to={"/"}>
+          <div className="flex items-center py-4">
+            <img
+              src="/images/Subtract.png"
+              alt="logo"
+              className="w-[56px] h-[58px] rounded"
+            />
+            <span className="w-full text-[#116D48] text-[20px] leading-[20px] font-semibold ms-3">
+              <p>RASEL</p>
+              <p>SEEDS</p>
+            </span>
+          </div>
+        </Link>
 
         <ul className="hidden md:flex text-[#1D263A] text-[17px] leading-[30px] gap-10 font-semibold">
           <li className="flex justify-center items-center">
@@ -33,10 +36,22 @@ const Header = () => {
               />
             </div>
           </li>
-          <li>Media Centre</li>
-          <li>Activity</li>
-          <li>About Us</li>
-          <li>Contact</li>
+
+          <Link to={"/media-centre"}>
+            <li>Media Centre</li>
+          </Link>
+
+          <Link to={"/activity"}>
+            <li>Activity</li>
+          </Link>
+
+          <Link to={"/about"}>
+            <li>About Us</li>
+          </Link>
+
+          <Link to={"/contact"}>
+            <li>Contact</li>
+          </Link>
         </ul>
 
         <div onClick={handleNav} className="block md:hidden">

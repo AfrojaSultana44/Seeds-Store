@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ProductsCard from "../shared/ProductsCard";
+import { Link } from "react-router-dom";
 
 const Products = () => {
   const [productList, setProductList] = useState([
@@ -66,9 +67,11 @@ const Products = () => {
       <ProductsCard productList={productList} />
 
       <div className="mt-[62px] pb-[117px] text-center">
-        <button className="text-[#116D48] font-semibold text-lg border border-[#146A47] rounded-xl py-[20px] px-[80px]">
-          VIEW ALL
-        </button>
+        <Link to={"/products"}>
+          <button className="text-[#116D48] font-semibold text-lg border border-[#146A47] rounded-xl py-[20px] px-[80px]">
+            VIEW ALL
+          </button>
+        </Link>
       </div>
     </div>
   );
