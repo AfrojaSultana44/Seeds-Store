@@ -8,6 +8,7 @@ import AboutPage from "./pages/about/AboutPage";
 import ProductPage from "./pages/product/ProductPage";
 import ActivityPage from "./pages/activity/ActivityPage";
 import ProductDetails from "./pages/product/ProductDetails";
+import DownloadPage from "./pages/download/DownloadPage";
 
 const routes = createBrowserRouter([
   {
@@ -64,6 +65,15 @@ const routes = createBrowserRouter([
           {
             index: true,
             element: <ContactPage />,
+          },
+        ],
+      },
+      {
+        path: "files",
+        children: [
+          {
+            index: true,
+            element: <DownloadPage />,
           },
         ],
       },
