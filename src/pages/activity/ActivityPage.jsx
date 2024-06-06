@@ -35,7 +35,7 @@ const ActivityPage = () => {
   ]);
 
   return (
-    <div className="'w-full max-w-[1160px] mx-auto">
+    <div className="w-full max-w-[1160px] mx-auto">
       <div>
         <h2 className="text-[#1D263A] text-[60px] leading-[66px] tracking-[-1px] font-semibold text-center py-20">
           Latest Activity
@@ -44,7 +44,7 @@ const ActivityPage = () => {
       <div className="w-[60%] mx-auto border border-[#116D48] rounded-[15px] flex justify-center items-center p-3">
         <div className="basis-[50%]">
           <p className="text-[#1D263A] text-[17px] leading-[30px] text-opacity-[50%] font-normal">
-            Search activity
+            Search Activity
           </p>
         </div>
         <div className="basis-[50%] text-right">
