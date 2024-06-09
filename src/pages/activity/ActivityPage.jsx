@@ -81,11 +81,17 @@ const ActivityPage = () => {
               key={index}
               className="bg-[#FFFFFF] rounded-[20px] overflow-hidden shadow-xl"
             >
-              <img
-                className="rounded-[20px] w-full h-[300px]"
-                src={item.src}
-                alt=""
-              />
+              <div
+                className="relative before:w-full before:h-full
+               before:absolute before:left-0 before:top-0
+                before:bg-[linear-gradient(180deg,_rgba(255,_255,_255,_0)_42.19%,_rgba(14,_20,_26,_0.56)_100%)] before:rounded-[20px]"
+              >
+                <img
+                  className="rounded-[20px] w-full h-[300px]"
+                  src={item.src}
+                  alt=""
+                />
+              </div>
               <div className="pl-4 py-10">
                 <p className="text-[#FF794D] text-[13px] leading-[22px] font-semibold pb-4">
                   {item.date}
