@@ -101,18 +101,22 @@ const ActivitySection = () => {
       >
         {sliderImages.map((item, index) => (
           <SwiperSlide key={index} className="w-full h-full">
-            <div className="relative">
+            <div
+              className="relative before:w-full before:h-full
+               before:absolute before:left-0 before:top-0
+                before:bg-[linear-gradient(180deg,_rgba(255,_255,_255,_0)_42.19%,_rgba(14,_20,_26,_0.56)_100%)] before:rounded-[15px]"
+            >
               <div>
                 <img
                   src={item.src}
-                  className="w-full h-auto border rounded-xl"
+                  className="w-full h-auto border rounded-[15px]"
                 />
               </div>
-              <div className="border border-red-500 absolute left-[30px] bottom-[27px]">
-                <h6 className="text-black text-[11px] leading-[20px] font-semibold">
+              <div className="absolute left-[30px] bottom-[27px]">
+                <h6 className="text-white text-[11px] leading-[20px] font-semibold">
                   {item.topic}
                 </h6>
-                <p className="text-black text-[15px] leading-[26px] font-bold">
+                <p className="text-white text-[15px] leading-[26px] font-bold">
                   {item.title}
                 </p>
               </div>

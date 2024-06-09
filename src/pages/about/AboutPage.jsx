@@ -30,7 +30,7 @@ const AboutPage = () => {
         />
       </div>
       <div className="flex justify-between">
-        <div className="basis-[50%] shrink-0 border border-blue-500">
+        <div className="basis-[50%] shrink-0">
           <div className="flex justify-between items-start">
             <div className="w-[80px] h-[80px] shrink-0 flex justify-center items-center rounded-full bg-[#D6EBE4] bg-opacity-[40%]">
               <img
@@ -54,7 +54,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        <div className="basis-[50%] shrink-0 border border-blue-500">
+        <div className="basis-[50%] shrink-0">
           <div className="flex justify-between">
             <div className="w-[80px] h-[80px] shrink-0 flex justify-center items-center rounded-full bg-[#FAE2DA] bg-opacity-[40%]">
               <img

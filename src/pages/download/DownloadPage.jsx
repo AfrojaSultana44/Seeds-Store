@@ -1,43 +1,62 @@
 import React, { useState } from "react";
 import { FcDocument } from "react-icons/fc";
+import BasicAccordion from "../../components/shared/BasicAccordion";
 
 const DownloadPage = () => {
   const [downloadFile, setDownloadFile] = useState([
     {
       id: "1",
       name: "Dealer Appoint Form",
+      fileType: "docx",
+      time: "1 day ago",
     },
     {
       id: "2",
       name: "Dealer Agreement Deed",
+      fileType: "docx",
+      time: "1 day ago",
     },
     {
       id: "3",
       name: "Salary Increment Letter",
+      fileType: "docx",
+      time: "1 day ago",
     },
     {
       id: "4",
       name: "Employee Resign Notice",
+      fileType: "docx",
+      time: "1 day ago",
     },
     {
       id: "5",
       name: "Dealer Notice",
+      fileType: "docx",
+      time: "1 day ago",
     },
     {
       id: "6",
       name: "Storing Maize Seed",
+      fileType: "docx",
+      time: "1 day ago",
     },
     {
       id: "7",
       name: "Bike Transfer Agreement",
+      fileType: "docx",
+      time: "1 day ago",
     },
     {
       id: "8",
       name: "Seed List for Approval",
+      fileType: "docx",
+      time: "1 day ago",
     },
     {
       id: "9",
       name: "Check Delivery Form",
+      fileType: "docx",
+      time: "1 day ago",
     },
   ]);
 
@@ -76,13 +95,13 @@ const DownloadPage = () => {
                       <FcDocument size={20} />
                     </p>
                     <span className="text-[#1D263A] text-[15px] leading-[28px] font-normal text-opacity-[70%]">
-                      docx
+                      {item.fileType}
                     </span>
                   </div>
-                  <div className="basis-[50%] flex items-center space-x-3">
+                  <div className="basis-[50%] flex justify-end items-center space-x-3">
                     <img src="/images/time_icon.svg" alt="time_icon" />
                     <span className="text-[#1D263A] text-[15px] leading-[28px] font-normal">
-                      2 Weeks ago
+                      {item.time}
                     </span>
                   </div>
                 </div>

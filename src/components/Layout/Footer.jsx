@@ -24,9 +24,15 @@ const Footer = () => {
           </h6>
           <div className="flex justify-between pt-[20px]">
             <ul className="text-[14px] leading-[30px] font-normal">
-              <li>About Us</li>
-              <li>Contact Us</li>
-              <li>Media Center</li>
+              <Link to={"/about"}>
+                <li>About Us</li>
+              </Link>
+              <Link to={"/contact"}>
+                <li>Contact Us</li>
+              </Link>
+              <Link to={"/media-centre"}>
+                <li>Media Center</li>
+              </Link>
               <Link to={"/files"}>
                 <li>Download Files</li>
               </Link>
