@@ -132,7 +132,7 @@ const AboutPage = () => {
       </div>
 
       <div className="flex justify-between py-[50px]">
-        <div className="basis-[65%] pt-[70px] pl-[70px] pr-8  border border-green-500">
+        <div className="basis-[65%] pt-[70px] pl-[70px] pr-8">
           <div>
             <div>
               <p className="text-[#1D263A] text-[48px] leading-[57.6px] tracking-[-1px] font-semibold">
@@ -151,7 +151,7 @@ const AboutPage = () => {
           </div>
         </div>
 
-        <div className="basis-[35%] relative border border-red-500">
+        <div className="basis-[35%] relative">
           <img
             className="w-80 rounded-lg object-cover object-center mb-[50px]"
             src={ceoProfile.image}

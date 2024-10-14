@@ -21,17 +21,33 @@ const ProductAccordion = () => {
       <Accordion open={open === accordionState.id}>
         <AccordionHeader className="">
           <div className="w-full flex justify-between items-center">
-            <h2>{accordionState.title}</h2>
-            <div
-              className="pl-2 cursor-pointer"
-              onClick={() => handleOpen(accordionState.id)}
-            >
-              <img
-                src="/images/menu_1.svg"
-                alt="icon"
-                className="w-[20px] h-[20px]"
-              />
-            </div>
+            <h2 className="text-[#1D263A] text-2xl font-semibold">
+              {accordionState.title}
+            </h2>
+
+            {open === accordionState.id ? (
+              <div
+                className="cursor-pointer"
+                onClick={() => handleOpen(accordionState.id)}
+              >
+                <img
+                  src="/images/menu_2.svg"
+                  alt="icon"
+                  className="w-[20px] h-[20px]"
+                />
+              </div>
+            ) : (
+              <div
+                className="cursor-pointer"
+                onClick={() => handleOpen(accordionState.id)}
+              >
+                <img
+                  src="/images/menu_1.svg"
+                  alt="icon"
+                  className="w-[20px] h-[20px]"
+                />
+              </div>
+            )}
           </div>
         </AccordionHeader>
         <AccordionBody>
